@@ -2,13 +2,13 @@
 
 ## Project Structure & Module Organization
 
-This repository contains Smart Access Gateway. Keep work scoped to the relevant component:
+This repository contains Ostium. Keep work scoped to the relevant component:
 
 - `backend/` contains the FastAPI API, authentication, access control, credentials, device configuration, logs, SQLite access, and planned tests.
 - `mobile/` contains the shared Expo Router application for native tenant use and the browser-based manager dashboard.
 - `web/` contains browser build and deployment notes for the shared Expo application; it is not a second frontend.
 - `hardware/esp32/` contains ESP32-CAM firmware and hardware notes.
-- `docs/` holds the system requirements, architecture, API, MQTT, security, testing, user, and maintenance documentation. Put meeting records in `docs/meeting-notes/`.
+- `docs/` holds the system requirements, architecture, API, device communication, security, testing, user, and maintenance documentation. Put meeting records in `docs/meeting-notes/`.
 
 Read the relevant component README and `docs/` material before changing interfaces or security-sensitive behavior.
 
@@ -21,7 +21,7 @@ cd backend && python -m unittest discover -s tests  # backend tests
 cd mobile && npm test                              # Expo client tests
 ```
 
-Document install, build, lint, and local-run commands in each component README as it is implemented.
+The GitHub workflows skip the backend or Expo test suite until that component has its project configuration. Once initialized, document install, build, lint, and local-run commands in the component README.
 
 ## Coding Style & Naming Conventions
 
