@@ -1,6 +1,6 @@
-# Smart Access Gateway
+# Ostium
 
-Smart Access Gateway is a camera doorbell and QR-entry system for rental properties, student housing, and multi-unit residences. Tenants use a mobile app to present a short-lived QR code; property managers use a web dashboard to issue and revoke access.
+**Ostium** is a camera doorbell and QR-entry system for rental properties, student housing, and multi-unit residences. Tenants use a mobile app to present a short-lived QR code; property managers use a web dashboard to issue and revoke access.
 
 ## Architecture
 
