@@ -1,0 +1,7 @@
+# Security
+
+QR credentials must be short-lived, signed, bound to the intended unit or device, and validated locally by the ESP32-CAM. The backend must not provide an online "unlock" endpoint.
+
+Store the QR signing key and each device credential outside the repository. Use HTTPS for all user and device traffic, parameterized SQL for SQLite queries, Argon2 password hashes, short-lived user tokens, and role checks on every manager action.
+
+The ESP32 stores only the configuration and revocation data required for offline validation. Treat firmware updates, relay control, device registration, and snapshot access as security-sensitive changes. A revoked credential takes effect on a device after its next successful configuration poll.
